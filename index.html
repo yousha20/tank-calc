@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TankCalc — Расчёт ёмкостей для пищевой промышленности</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="tb-in">
+    <span>&#127981; Расчёт ёмкостей для пищевой промышленности &middot; ГОСТ 14249-89</span>
+    <div class="tb-contacts">
+      <span>&#128222; +7 (495) 123-45-67</span>
+      <span>&#9993; info [at] tankcalc.ru</span>
+      <span>Пн&ndash;Пт, 9:00&ndash;18:00</span>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="hd-in">
+    <a href="#" class="logo">
+      <div class="logo-icon"><svg width="24" height="24" fill="none" viewBox="0 0 24 24" style="pointer-events:none"><rect x="5" y="3" width="14" height="18" rx="3" stroke="white" stroke-width="2"/><path d="M9 8h6M9 12h6M9 16h4" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+      <div class="logo-text"><strong>TankCalc</strong><span>Профессиональный расчёт ёмкостей</span></div>
+    </a>
+    <nav>
+      <a href="#calc">Калькулятор</a>
+      <a href="#how">Как работает</a>
+      <a href="#std">Стандарты</a>
+      <a href="#footer">Контакты</a>
+      <a href="#calc" class="nav-cta">Рассчитать &rarr;</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grad"></div>
+  <div class="hero-in">
+    <div class="hero-text">
+      <h1>Расчёт промышленных<br><em>ёмкостей</em> за минуту</h1>
+      <p>Онлайн-калькулятор для пищевой промышленности. Геометрические и прочностные расчёты, оценка стоимости и сроков изготовления по ГОСТ 14249-89.</p>
+      <div class="hero-badges">
+        <span class="badge">&#10003; Молочное производство</span>
+        <span class="badge">&#10003; Соки и напитки</span>
+        <span class="badge">&#10003; Масложировая отрасль</span>
+        <span class="badge">&#10003; ГОСТ-расчёты</span>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="hstat"><strong>4</strong><span>типа<br>ёмкостей</span></div>
+      <div class="hstat"><strong>ГОСТ</strong><span>14249-89<br>расчёты</span></div>
+      <div class="hstat"><strong>10+</strong><span>видов<br>продуктов</span></div>
+      <div class="hstat"><strong>0 &#8381;</strong><span>бесплатно<br>онлайн</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="trust">
+  <div class="trust-in">
+    <div class="ti">&#10003; Расчёт толщины стенки по ГОСТ 14249-89</div>
+    <div class="ti">&#10003; Материалы: AISI 304, AISI 316L, Ст3</div>
+    <div class="ti">&#10003; Учёт мешалок, теплоизоляции, люков</div>
+    <div class="ti">&#10003; Ориентировочная стоимость и срок</div>
+  </div>
+</div>
+
+<main id="calc">
+  <div class="sec-hd">
+    <h2>Конфигуратор ёмкости</h2>
+    <div class="divider"></div>
+    <p style="margin-top:12px">Заполните параметры — результат появится мгновенно</p>
+  </div>
+
+  <div class="step">
+    <div class="step-hd"><div class="step-num">1</div><div><div class="step-title">Тип ёмкости</div><div class="step-sub">Выберите конструкцию резервуара</div></div></div>
+    <div class="tank-grid">
+      <div class="tank-opt active" id="t-vertical">
+        <div class="t-check"><svg width="10" height="10" viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2" stroke="white" stroke-width="1.5" fill="none"/></svg></div>
+        <svg width="64" height="72" viewBox="0 0 64 72" style="display:block;margin:0 auto"><rect x="14" y="12" width="36" height="48" rx="5" fill="#ccfbf1" stroke="#0d9488" stroke-width="2"/><path d="M14 17 Q32 4 50 17" fill="#99f6e4" stroke="#0d9488" stroke-width="2"/><path d="M14 55 Q32 68 50 55" fill="#99f6e4" stroke="#0d9488" stroke-width="2"/><rect x="46" y="30" width="8" height="5" rx="1" fill="#0d9488" opacity=".7"/><rect x="10" y="30" width="8" height="5" rx="1" fill="#0d9488" opacity=".7"/><line x1="20" y1="60" x2="18" y2="70" stroke="#0d9488" stroke-width="2"/><line x1="44" y1="60" x2="46" y2="70" stroke="#0d9488" stroke-width="2"/><rect x="15" y="35" width="34" height="19" fill="#5eead4" opacity=".4"/></svg>
+        <strong>Вертикальная</strong><small>Цилиндрическая, стоячая</small>
+      </div>
+      <div class="tank-opt" id="t-horizontal">
+        <div class="t-check"><svg width="10" height="10" viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2" stroke="white" stroke-width="1.5" fill="none"/></svg></div>
+        <svg width="80" height="56" viewBox="0 0 80 56" style="display:block;margin:0 auto"><rect x="14" y="12" width="52" height="28" rx="14" fill="#ccfbf1" stroke="#0d9488" stroke-width="2"/><ellipse cx="14" cy="26" rx="6" ry="14" fill="#99f6e4" stroke="#0d9488" stroke-width="2"/><ellipse cx="66" cy="26" rx="6" ry="14" fill="#99f6e4" stroke="#0d9488" stroke-width="2"/><rect x="14" y="30" width="52" height="9" fill="#5eead4" opacity=".5"/><rect x="22" y="38" width="10" height="6" rx="2" fill="#0d9488" opacity=".6"/><rect x="48" y="38" width="10" height="6" rx="2" fill="#0d9488" opacity=".6"/><rect x="37" y="6" width="6" height="8" rx="1" fill="#0d9488" opacity=".7"/></svg>
+        <strong>Горизонтальная</strong><small>Цилиндрическая, лежачая</small>
+      </div>
+      <div class="tank-opt" id="t-rectangular">
+        <div class="t-check"><svg width="10" height="10" viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2" stroke="white" stroke-width="1.5" fill="none"/></svg></div>
+        <svg width="72" height="68" viewBox="0 0 72 68" style="display:block;margin:0 auto"><polygon points="16,18 56,18 56,56 16,56" fill="#ccfbf1" stroke="#0d9488" stroke-width="2"/><polygon points="56,18 66,10 66,48 56,56" fill="#99f6e4" stroke="#0d9488" stroke-width="2"/><polygon points="16,18 56,18 66,10 26,10" fill="#b2f5ea" stroke="#0d9488" stroke-width="2"/><polygon points="16,40 56,40 56,56 16,56" fill="#5eead4" opacity=".45"/><rect x="34" y="4" width="6" height="8" rx="1" fill="#0d9488" opacity=".7"/></svg>
+        <strong>Прямоугольная</strong><small>Кубическая форма</small>
+      </div>
+      <div class="tank-opt" id="t-conical">
+        <div class="t-check"><svg width="10" height="10" viewBox="0 0 10 10"><polyline points="1.5,5 4,7.5 8.5,2" stroke="white" stroke-width="1.5" fill="none"/></svg></div>
+        <svg width="64" height="72" viewBox="0 0 64 72" style="display:block;margin:0 auto"><polygon points="32,60 10,28 54,28" fill="#99f6e4" stroke="#0d9488" stroke-width="2"/><rect x="14" y="10" width="36" height="20" rx="4" fill="#ccfbf1" stroke="#0d9488" stroke-width="2"/><path d="M14 14 Q32 4 50 14" fill="#b2f5ea" stroke="#0d9488" stroke-width="2"/><polygon points="32,50 16,28 48,28" fill="#5eead4" opacity=".45"/><rect x="29" y="60" width="6" height="8" rx="1" fill="#0d9488" opacity=".7"/></svg>
+        <strong>Конический</strong><small>С коническим днищем</small>
+      </div>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-hd"><div class="step-num">2</div><div><div class="step-title">Объём</div><div class="step-sub">Рабочий объём ёмкости в м&#179;</div></div></div>
+    <div class="vol-sec">
+      <div class="vol-illus">
+        <svg width="90" height="110" viewBox="0 0 90 110" style="pointer-events:none"><rect x="20" y="10" width="50" height="80" rx="8" fill="#f0fdf9" stroke="#0d9488" stroke-width="2"/><line x1="58" y1="25" x2="66" y2="25" stroke="#0d9488" stroke-width="1.5"/><line x1="58" y1="40" x2="70" y2="40" stroke="#0d9488" stroke-width="1.5"/><line x1="58" y1="55" x2="66" y2="55" stroke="#0d9488" stroke-width="1.5"/><line x1="58" y1="70" x2="70" y2="70" stroke="#0d9488" stroke-width="1.5"/><rect x="21" y="52" width="48" height="37" fill="#5eead4" opacity=".5"/><path d="M21 52 Q45 48 69 52" fill="#5eead4" opacity=".7"/><ellipse cx="45" cy="10" rx="25" ry="5" fill="#ccfbf1" stroke="#0d9488" stroke-width="1.5"/><rect x="41" y="2" width="8" height="10" rx="2" fill="#0d9488" opacity=".6"/><text x="73" y="44" font-size="9" fill="#0d9488" font-family="DM Mono, monospace" font-weight="500">50%</text><text x="73" y="73" font-size="9" fill="#0d9488" font-family="DM Mono, monospace" font-weight="500">0%</text></svg>
+      </div>
+      <div class="vol-wrap">
+        <div class="field-lbl">Типовые объёмы</div>
+        <div class="pills" id="pill-group">
+          <div class="pill" data-vol="0.5">0.5 м&#179;</div>
+          <div class="pill active" data-vol="1">1 м&#179;</div>
+          <div class="pill" data-vol="2">2 м&#179;</div>
+          <div class="pill" data-vol="3">3 м&#179;</div>
+          <div class="pill" data-vol="5">5 м&#179;</div>
+          <div class="pill" data-vol="8">8 м&#179;</div>
+          <div class="pill" data-vol="10">10 м&#179;</div>
+          <div class="pill" data-vol="20">20 м&#179;</div>
+          <div class="pill" data-vol="50">50 м&#179;</div>
+          <div class="pill" data-vol="custom">Другой&hellip;</div>
+        </div>
+        <div class="custom-vol" id="custom-vol-wrap">
+          <input type="number" id="custom-vol-input" placeholder="Введите объём" min="0.1" step="0.1">
+          <span>м&#179;</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-hd"><div class="step-num">3</div><div><div class="step-title">Материал и продукт</div><div class="step-sub">Сталь и тип хранимого продукта</div></div></div>
+    <div class="mp-row">
+      <div class="fg">
+        <div class="fg-hd"><svg width="18" height="18" fill="none" stroke="#0d9488" stroke-width="2" viewBox="0 0 24 24" style="pointer-events:none"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14"/></svg><span class="field-lbl" style="margin:0">Материал корпуса</span></div>
+        <div class="mat-cards">
+          <div class="mat-card active" id="m-304"><svg width="28" height="28" viewBox="0 0 28 28"><circle cx="14" cy="14" r="10" fill="#ccfbf1" stroke="#0d9488" stroke-width="1.5"/><circle cx="14" cy="14" r="5" fill="#5eead4"/><circle cx="14" cy="14" r="2" fill="#0d9488"/></svg><strong>AISI 304</strong><small>210 руб/кг</small></div>
+          <div class="mat-card" id="m-316"><svg width="28" height="28" viewBox="0 0 28 28"><circle cx="14" cy="14" r="10" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5"/><circle cx="14" cy="14" r="5" fill="#fcd34d"/><circle cx="14" cy="14" r="2" fill="#d97706"/></svg><strong>AISI 316L</strong><small>282 руб/кг</small></div>
+          <div class="mat-card" id="m-st3"><svg width="28" height="28" viewBox="0 0 28 28"><rect x="4" y="4" width="20" height="20" rx="4" fill="#e5e7eb" stroke="#6b7280" stroke-width="1.5"/><rect x="9" y="9" width="10" height="10" rx="2" fill="#9ca3af"/><rect x="12" y="12" width="4" height="4" rx="1" fill="#4b5563"/></svg><strong>Ст3</strong><small>88 руб/кг</small></div>
+        </div>
+      </div>
+      <div class="fg">
+        <div class="fg-hd"><svg width="18" height="18" fill="none" stroke="#0d9488" stroke-width="2" viewBox="0 0 24 24" style="pointer-events:none"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2zM2 12h20"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg><span class="field-lbl" style="margin:0">Хранимый продукт</span></div>
+        <select id="product-sel">
+          <option value="milk" data-d="1030">Молоко (1030 кг/м&#179;)</option>
+          <option value="juice" data-d="1050">Сок / морс (1050 кг/м&#179;)</option>
+          <option value="oil" data-d="920">Масло растительное (920 кг/м&#179;)</option>
+          <option value="honey" data-d="1420">Мёд (1420 кг/м&#179;)</option>
+          <option value="beer" data-d="1010">Пиво / квас (1010 кг/м&#179;)</option>
+          <option value="yogurt" data-d="1050">Йогурт / кефир (1050 кг/м&#179;)</option>
+          <option value="wine" data-d="990">Вино (990 кг/м&#179;)</option>
+          <option value="sauce" data-d="1100">Соус / кетчуп (1100 кг/м&#179;)</option>
+          <option value="water" data-d="1000">Вода (1000 кг/м&#179;)</option>
+          <option value="other" data-d="1000">Другой продукт (1000 кг/м&#179;)</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-hd"><div class="step-num">4</div><div><div class="step-title">Дополнительные опции</div><div class="step-sub">Выберите нужные комплектующие</div></div></div>
+    <div class="opts-grid">
+      <div class="opt-card" id="opt-hatch"><div class="tog"></div><svg width="52" height="52" viewBox="0 0 52 52"><circle cx="26" cy="26" r="20" fill="#f0fdf9" stroke="#0d9488" stroke-width="2"/><circle cx="26" cy="26" r="12" fill="#ccfbf1" stroke="#0d9488" stroke-width="1.5"/><circle cx="26" cy="26" r="5" fill="#5eead4"/><rect x="6" y="24" width="8" height="4" rx="2" fill="#0d9488"/><rect x="38" y="24" width="8" height="4" rx="2" fill="#0d9488"/><rect x="24" y="6" width="4" height="8" rx="2" fill="#0d9488"/><circle cx="14" cy="14" r="2" fill="#0d9488" opacity=".5"/><circle cx="38" cy="14" r="2" fill="#0d9488" opacity=".5"/><circle cx="14" cy="38" r="2" fill="#0d9488" opacity=".5"/><circle cx="38" cy="38" r="2" fill="#0d9488" opacity=".5"/></svg><strong>Люк-лаз DN500</strong><small>Для обслуживания и очистки резервуара</small></div>
+      <div class="opt-card" id="opt-mixer"><div class="tog"></div><svg width="52" height="52" viewBox="0 0 52 52"><line x1="26" y1="4" x2="26" y2="48" stroke="#0d9488" stroke-width="2.5"/><ellipse cx="26" cy="26" rx="18" ry="6" fill="#ccfbf1" stroke="#0d9488" stroke-width="1.5" transform="rotate(-30 26 26)"/><ellipse cx="26" cy="26" rx="18" ry="6" fill="#b2f5ea" stroke="#0d9488" stroke-width="1.5" transform="rotate(30 26 26)"/><circle cx="26" cy="26" r="4" fill="#0d9488"/><rect x="20" y="4" width="12" height="8" rx="3" fill="#5eead4" stroke="#0d9488" stroke-width="1.5"/></svg><strong>Мешалка</strong><small>Пропеллерная / якорная, перемешивание продукта</small></div>
+      <div class="opt-card" id="opt-insul"><div class="tog"></div><svg width="52" height="52" viewBox="0 0 52 52"><rect x="8" y="8" width="36" height="36" rx="10" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/><rect x="13" y="13" width="26" height="26" rx="7" fill="#ccfbf1" stroke="#0d9488" stroke-width="1.5"/><rect x="18" y="18" width="16" height="16" rx="4" fill="#5eead4" stroke="#0d9488" stroke-width="1.5"/><line x1="26" y1="21" x2="26" y2="31" stroke="#0d9488" stroke-width="1.5"/><line x1="21" y1="26" x2="31" y2="26" stroke="#0d9488" stroke-width="1.5"/><line x1="22.5" y1="22.5" x2="29.5" y2="29.5" stroke="#0d9488" stroke-width="1"/><line x1="29.5" y1="22.5" x2="22.5" y2="29.5" stroke="#0d9488" stroke-width="1"/></svg><strong>Теплоизоляция</strong><small>Минвата / ППУ, поддержание температуры</small></div>
+    </div>
+  </div>
+
+  <div class="btn-wrap">
+    <button class="btn-reset" id="btn-reset">&#8635; Сбросить</button>
+    <button class="btn-calc" id="btn-calc">Рассчитать ёмкость &rarr;</button>
+  </div>
+
+  <div class="result" id="result">
+    <div class="r-title">&#128203; Результат расчёта</div>
+    <div class="r-main">
+      <div class="r-item"><div class="r-lbl">Ориентировочный вес</div><div class="r-val" id="r-weight">—</div><div class="r-unit">кг</div></div>
+      <div class="r-item"><div class="r-lbl">Стоимость изготовления</div><div class="r-val" id="r-price">—</div><div class="r-unit">руб. (ориент.)</div></div>
+      <div class="r-item"><div class="r-lbl">Срок изготовления</div><div class="r-val" id="r-lead">—</div><div class="r-unit">нед.</div></div>
+    </div>
+    <div class="r-div"></div>
+    <div class="r-details">
+      <div class="r-det"><div class="dl">Объём</div><div class="dv" id="r-vol">—</div></div>
+      <div class="r-det"><div class="dl">Масса продукта</div><div class="dv" id="r-liq">—</div></div>
+      <div class="r-det"><div class="dl">Толщина стенки</div><div class="dv" id="r-wall">—</div></div>
+      <div class="r-det"><div class="dl">Конфигурация</div><div class="dv" id="r-cfg">—</div></div>
+    </div>
+    <div class="r-note">* Расчёт носит ориентировочный характер. Точные характеристики определяются при проектировании по ГОСТ 14249-89.</div>
+  </div>
+
+  <div class="db-section" id="db-section">
+    <div class="db-header">
+      <div class="db-title">
+        <div class="db-icon"><svg width="20" height="20" fill="none" viewBox="0 0 24 24" style="pointer-events:none"><ellipse cx="12" cy="5" rx="9" ry="3" stroke="white" stroke-width="2"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5" stroke="white" stroke-width="2"/><path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3" stroke="white" stroke-width="2"/></svg></div>
+        <div class="db-title-text"><strong>База данных SQLite <span class="db-count" id="db-count">0</span></strong><span>История расчётов &mdash; сохраняется автоматически</span></div>
+      </div>
+      <div class="db-actions">
+        <div class="db-status"><div class="db-dot" id="db-dot"></div><span id="db-status-text">Загрузка SQLite&hellip;</span></div>
+        <button class="btn-export" id="btn-export">&#8595; Скачать .db файл</button>
+        <button class="btn-sql" id="btn-sql">&#128196; SQL для DB Browser</button>
+        <button class="btn-clear-db" id="btn-clear-db">&#128465; Очистить</button>
+      </div>
+    </div>
+    <div class="db-table-wrap">
+      <table class="db-table">
+        <thead><tr><th>ID</th><th>Тип ёмкости</th><th>Объём</th><th>Материал</th><th>Вес (кг)</th><th>Стоимость (руб.)</th><th>Толщина стенки</th><th>Опции</th><th>Дата и время</th></tr></thead>
+        <tbody id="db-tbody"><tr><td colspan="9" class="db-empty">Нет данных. Сделайте расчёт — он сохранится автоматически.</td></tr></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- SQL MODAL: two separate divs, no pointer-events tricks -->
+  <div id="sql-overlay" class="sql-overlay"></div>
+  <div id="sql-box" class="sql-box" style="display:none">
+    <h3>&#128196; SQL скрипт для DB Browser</h3>
+    <div class="sql-steps">
+      <b>Как использовать:</b><br>
+      1. Нажмите <b>Скопировать SQL</b> ниже<br>
+      2. Откройте <b>DB Browser for SQLite</b><br>
+      3. Нажмите <b>New Database</b> &rarr; сохраните файл<br>
+      4. Перейдите на вкладку <b>Execute SQL</b><br>
+      5. Вставьте код (Ctrl+V) и нажмите <b>&#9654; Run</b><br>
+      6. Нажмите <b>Browse Data</b> &rarr; выберите таблицу <b>calculations</b>
+    </div>
+    <div class="sql-code" id="sql-code-block">-- нет данных</div>
+    <div class="sql-btns">
+      <button class="btn-close-modal" id="btn-close-modal">Закрыть</button>
+      <button class="btn-copy" id="btn-copy-sql">&#128203; Скопировать SQL</button>
+    </div>
+  </div>
+
+  <div class="how" id="how">
+    <div style="font-family:'Syne',sans-serif;font-size:22px;font-weight:800">Как работает калькулятор</div>
+    <div style="width:48px;height:3px;background:var(--teal);border-radius:2px;margin:10px 0 0"></div>
+    <div class="how-grid">
+      <div class="how-step"><div class="how-icon"><svg width="26" height="26" fill="none" stroke="#0d9488" stroke-width="2" viewBox="0 0 24 24" style="pointer-events:none"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M9 9h6M9 12h6M9 15h4"/></svg></div><strong>Геометрия</strong><p>Вычисляем объём, площадь поверхности и массу жидкости по классическим формулам.</p></div>
+      <div class="how-step"><div class="how-icon"><svg width="26" height="26" fill="none" stroke="#0d9488" stroke-width="2" viewBox="0 0 24 24" style="pointer-events:none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div><strong>Прочность</strong><p>Толщина стенки по ГОСТ 14249-89: t = (P&middot;D)/(2&middot;[&sigma;]&middot;&phi; &minus; P) + C</p></div>
+      <div class="how-step"><div class="how-icon"><svg width="26" height="26" fill="none" stroke="#0d9488" stroke-width="2" viewBox="0 0 24 24" style="pointer-events:none"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div><strong>Стоимость</strong><p>По весу корпуса, цене материала и стоимости выбранных комплектующих.</p></div>
+      <div class="how-step"><div class="how-icon"><svg width="26" height="26" fill="none" stroke="#0d9488" stroke-width="2" viewBox="0 0 24 24" style="pointer-events:none"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div><strong>Сроки</strong><p>Срок изготовления зависит от объёма и выбранных опций. От 3 до 14 недель.</p></div>
+    </div>
+  </div>
+
+  <div class="std-bar" id="std">
+    <strong>&#127885; Применяемые стандарты:</strong>
+    <span class="gost">ГОСТ 14249-89</span><span class="gost">ГОСТ 9931-85</span><span class="gost">ГОСТ 19.701-90</span><span class="gost">ГОСТ 34233.1-2017</span><span class="gost">СанПиН (пищ.)</span>
+  </div>
+</main>
+
+<footer id="footer">
+  <div class="ft-in">
+    <div class="ft-brand ft-col">
+      <a href="#" class="logo"><div class="logo-icon"><svg width="22" height="22" fill="none" viewBox="0 0 24 24" style="pointer-events:none"><rect x="5" y="3" width="14" height="18" rx="3" stroke="white" stroke-width="2"/><path d="M9 8h6M9 12h6M9 16h4" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg></div><div class="logo-text"><strong style="color:#5eead4">TankCalc</strong><span style="color:rgba(255,255,255,.5)">Расчёт ёмкостей</span></div></a>
+      <p>Профессиональная ИС для расчёта промышленных ёмкостей в пищевой промышленности. Расчёты по ГОСТ 14249-89.</p>
+    </div>
+    <div class="ft-col"><h4>Калькулятор</h4><ul><li><a href="#">Вертикальные ёмкости</a></li><li><a href="#">Горизонтальные резервуары</a></li><li><a href="#">Прямоугольные баки</a></li><li><a href="#">Конические ёмкости</a></li></ul></div>
+    <div class="ft-col"><h4>Информация</h4><ul><li><a href="#">О системе</a></li><li><a href="#">ГОСТ 14249-89</a></li><li><a href="#">Методика расчёта</a></li><li><a href="#">Техническое задание</a></li></ul></div>
+    <div class="ft-col"><h4>Контакты</h4>
+      <div class="ft-contacts">
+        <div class="ft-ci"><svg width="16" height="16" fill="none" stroke="#5eead4" stroke-width="2" viewBox="0 0 24 24" style="flex-shrink:0;margin-top:2px;pointer-events:none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.06 9.8 19.79 19.79 0 01.07 1.23 2 2 0 012.06.04h3A2 2 0 017 1.82a12.81 12.81 0 00.35 2.84 2 2 0 01-.45 2.11L5.82 7.85A16 16 0 0016.15 18.18l1.08-1.08a2 2 0 012.11-.45 12.81 12.81 0 002.84.35 2 2 0 011.78 2.02z"/></svg><div><strong>+7 (495) 123-45-67</strong>Пн&ndash;Пт, 9:00&ndash;18:00</div></div>
+        <div class="ft-ci"><svg width="16" height="16" fill="none" stroke="#5eead4" stroke-width="2" viewBox="0 0 24 24" style="flex-shrink:0;margin-top:2px;pointer-events:none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><div><strong>info [at] tankcalc.ru</strong>Ответим в течение дня</div></div>
+        <div class="ft-ci"><svg width="16" height="16" fill="none" stroke="#5eead4" stroke-width="2" viewBox="0 0 24 24" style="flex-shrink:0;margin-top:2px;pointer-events:none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><div><strong>г. Москва</strong>ул. Промышленная, д. 15</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="ft-bot"><div class="ft-bot-in"><span>&#169; 2026 TankCalc &mdash; ВКР 2026 &middot; Yousha Alali</span><span>Расчёт носит ориентировочный характер &middot; ГОСТ 14249-89</span></div></div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
